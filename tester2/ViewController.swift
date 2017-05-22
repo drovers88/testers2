@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         FirstLabel.text="Hola"
         
-        if tapcount >= 10 { FirstLabel.text = "WHOOOP"
+        if tapcount >= 13 { FirstLabel.text = "pooooooop"
         }
     }
     
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+//LOL
 
 }
 
