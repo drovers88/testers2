@@ -30,17 +30,39 @@
                                     <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jO-S6-xUv"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cK-9G-n4f">
+                                <rect key="frame" x="251" y="178" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="v0K-iH-gbq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3k-UE-46z">
+                                <rect key="frame" x="251" y="234" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="mme-EU-xN0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VNj-sh-xRt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="55C-9W-1gV"/>
                             <constraint firstItem="GcE-rk-8V5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LAi-0f-Naa"/>
+                            <constraint firstItem="S3k-UE-46z" firstAttribute="top" secondItem="8cK-9G-n4f" secondAttribute="bottom" constant="26" id="OhP-XH-nkb"/>
+                            <constraint firstItem="S3k-UE-46z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WTa-l7-JLZ"/>
+                            <constraint firstItem="8cK-9G-n4f" firstAttribute="top" secondItem="GcE-rk-8V5" secondAttribute="bottom" constant="8" id="Zkq-gj-wMv"/>
+                            <constraint firstItem="8cK-9G-n4f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="czx-np-XP2"/>
                             <constraint firstItem="VNj-sh-xRt" firstAttribute="top" secondItem="GcE-rk-8V5" secondAttribute="bottom" constant="-100" id="pZ8-PT-EAK"/>
                             <constraint firstItem="VNj-sh-xRt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="z1x-2m-rtW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="FirstLabel" destination="VNj-sh-xRt" id="xpZ-7c-oQr"/>
+                        <outlet property="text1" destination="8cK-9G-n4f" id="LQ0-7J-gnq"/>
+                        <outlet property="text2" destination="S3k-UE-46z" id="fRp-Lx-Oqc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,20 +13,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var FirstLabel: UILabel!
     
-    var tapcount = 0
+  
     
     @IBAction func ButtonPress(sender: AnyObject) {
         
-        tapcount = tapcount+1
-        print (tapcount)
         
-        FirstLabel.text="Hola"
+        print(text1.text)
+        print(text2.text)
         
-        if tapcount >= 13 { FirstLabel.text = "pooooooop"
-        }
+        
     }
     
+    @IBOutlet weak var text1: UITextField!
     
+    @IBOutlet weak var text2: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
