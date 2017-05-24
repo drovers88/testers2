@@ -17,7 +17,11 @@ class ViewController: UIViewController {
     
     @IBAction func ButtonPress(sender: AnyObject) {
         
-        FirstLabel.text = "This is so convoluted....\(Double (text1.text!)! + Double (text2.text!)!)"
+        let addition = true
+        
+        if addition {FirstLabel.text = "You added....\(Double (text1.text!)! + Double (text2.text!)!)"}
+        
+        else {FirstLabel.text = "You subtracted....\(Double (text1.text!)! - Double (text2.text!)!)"}
         
         print(text1.text)
         print(text2.text)
